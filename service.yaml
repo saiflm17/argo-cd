@@ -4,9 +4,9 @@ kind: Service
 metadata:
   name: applicatin-service
 spec:
-  selector:
-    app: game-model
-  ports:
-    port: 3000             
-    targetPort: 3000
   type: LoadBalancer
+  selector:
+     app: game-model
+  ports:
+     - port: 3000
+       targetPort: 3000
