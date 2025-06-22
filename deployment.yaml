@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: application-container
-        image: saikumar1817/mytetris:v1
+        image: saikumar1817/mytetris:v1-2.0
         ports:
         - containerPort: 3000 
