@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: app-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: tetris
+      app: tetris-game
   template:
     metadata:
       labels:
-        app: tetris
+        app: tetris-game
     spec:
       containers:
-      - name: tetris-container
+      - name: tetris
         image: saikumar1817/mytetris:v1
         ports:
         - containerPort: 3000 
